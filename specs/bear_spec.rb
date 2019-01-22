@@ -22,9 +22,9 @@ class TestBear < MiniTest::Test
 
   def test_hunt_fish
     @river = River.new("Amazon")
-    @river.number_of_fish(@fish_1)
-    @river.number_of_fish(@fish_2)
-    @bear.hunt_fish(river)
+    @river.add_fish(@fish_1)
+    @river.add_fish(@fish_2)
+    @bear.hunt_fish(@river)
     assert_equal(1, @bear.food_count)
     assert_equal(1, @river.fish_count)
   end
