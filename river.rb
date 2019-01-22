@@ -8,9 +8,12 @@ attr_accessor :fish_stock
     @fish_stock = []
   end
 
-  def number_of_fish(fish)
+  def add_fish(fish)
     @fish_stock << fish
   end
 
+  def fish_count
+    @fish_stock.length
+  end
 
 end

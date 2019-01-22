@@ -9,4 +9,9 @@ attr_accessor :food
     @food = []
   end
 
+  def hunt_fish(river)
+     fish = river.fish_stock
+      @food << fish
+  end
+
 end
