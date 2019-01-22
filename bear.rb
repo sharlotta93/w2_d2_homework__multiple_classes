@@ -14,7 +14,7 @@ attr_accessor :food
   end
 
   def hunt_fish(river)
-     fish = river.fish_stock
+     fish = river.fish_stock.pop
       @food << fish
   end
 
