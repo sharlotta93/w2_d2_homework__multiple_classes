@@ -18,4 +18,8 @@ attr_accessor :food
       @food << fish
   end
 
+  def can_roar
+    return "ROAR"
+  end
+
 end
